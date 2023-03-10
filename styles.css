@@ -16,7 +16,7 @@ body {
 
 nav {
   float: right;
-  padding: 1.5rem;
+  padding: 3rem;
 }
 
 li {
@@ -24,6 +24,7 @@ li {
   float: right;
   font-size: 2rem;
   font-family: "Courier New", Courier, monospace;
+  margin-left:1rem;
 }
 
 a {
@@ -100,7 +101,7 @@ header {
 
 #about-me-area {
   max-width: 192rem;
-  height: 50rem;
+  height: 40rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,11 +145,11 @@ h2 {
 }
 
 #about-me-text-right {
-    color:white;
-    font-size: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
 }
 
-#about-me-bar {
+#green-bar {
   width: 60rem;
   height: 0.5rem;
   background-color: rgb(45, 230, 156);
@@ -156,13 +157,21 @@ h2 {
 }
 
 #linked-in {
-    background-color: rgb(45, 230, 156);
-    color: rgb(35, 39, 45);
-    font-family: "Courier New", Courier, monospace;
-    max-width: fit-content;
-    font-size: 2rem;
+  background-color: rgb(45, 230, 156);
+  color: rgb(35, 39, 45);
+  font-family: "Courier New", Courier, monospace;
+  max-width: fit-content;
+  font-size: 2rem;
 }
 
 #linked-in:hover {
-    background-color: white;
+  background-color: white;
+}
+
+#portfolio-area {
+  max-width: 192rem;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
