@@ -79,6 +79,7 @@ header {
   font-family: "Courier New", Courier, monospace;
   color: white;
   font-size: 6rem;
+  font-weight: 500;
 }
 
 #description {
@@ -113,7 +114,7 @@ header {
   height: 40rem;
   display: flex;
   gap: 5rem;
-  justify-content: center;
+  justify-content: left;
 }
 
 h2 {
@@ -122,20 +123,29 @@ h2 {
   color: white;
   line-height: 4rem;
   text-align: left;
-  width: fit-content;
+  font-weight: 500;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 #about-me-left {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 40rem;
 }
 
 #about-me-text-left {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
   color: grey;
-  width:40rem;
+  text-align:left;
+  max-width: 40rem;;
 }
 
 #about-me-right {
@@ -179,7 +189,7 @@ h2 {
 
 #portfolio-area {
   max-width: 192rem;
-  height: 40rem;
+  height: 45rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,36 +197,40 @@ h2 {
 
 #portfolio-container {
   max-width: 120rem;
-  height: 40rem;
+  height: 45rem;
   display: flex;
   gap: 5rem;
   justify-content: center;
-
 }
 
-#fuel-app-image{
+#fuel-app-image {
   max-width: 40rem;
 }
 
-#portfolio-left{
+#portfolio-left {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 11rem;
+  width: 40rem;
 }
 
-#portfolio-left-image{
+#portfolio-left-image {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
   justify-content: center;
+  width: 40rem;
 }
 
 #barbershop-app-image {
-  max-height: 34rem;
+  max-width: 40rem;
 }
 
 #contact-me {
-  height:40rem;
-  max-width:100%;
-  background-color:rgb(45, 230, 156);
+  height: 40rem;
+  max-width: 100%;
+}
+
+span {
+  color: grey;
+  font-size: 2rem;
 }
