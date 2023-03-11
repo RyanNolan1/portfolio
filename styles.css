@@ -101,13 +101,13 @@ header {
 
 #about-me-area {
   max-width: 192rem;
-  height: 45rem;
+  height: 40rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#about-me-details {
+#about-me-container {
   max-width: 120rem;
   height: 40rem;
   display: flex;
@@ -120,7 +120,8 @@ h2 {
   font-size: 4rem;
   color: white;
   line-height: 4rem;
-  text-align: center;
+  text-align: left;
+  width: fit-content;
 }
 
 #about-me-left {
@@ -145,7 +146,7 @@ h2 {
   gap: 2rem;
 }
 
-#about-me-text-right {
+#description {
   color: white;
   font-size: 1.5rem;
 }
@@ -177,7 +178,7 @@ h2 {
 
 #portfolio-area {
   max-width: 192rem;
-  height: 45rem;
+  height: 40rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,9 +190,10 @@ h2 {
   display: flex;
   gap: 5rem;
   justify-content: center;
+
 }
 
-#test-image {
+#fuel-app-image{
   max-width: 40rem;
 }
 
@@ -201,3 +203,13 @@ h2 {
   gap: 5rem;
 }
 
+#portfolio-left-image{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+}
+
+#barbershop-app-image {
+  max-height: 34rem;
+}
