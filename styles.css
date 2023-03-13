@@ -9,7 +9,7 @@ html {
   height: 100%;
   scroll-behavior: smooth;
   height: 100%;
-  /* overflow-x: hidden;  */
+  overflow-x: hidden; 
 }
 
 body {
@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* overflow-x: hidden;  */
+  overflow-x: hidden; 
 }
 
 nav {
@@ -74,7 +74,6 @@ header {
 }
 
 #main-details {
-  justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -85,6 +84,7 @@ header {
   color: white;
   font-size: 6rem;
   font-weight: 500;
+  line-height: 6rem;
 }
 
 #description {
@@ -120,7 +120,7 @@ header {
   justify-content: left;
 }
 
-h2 {
+h1 {
   font-family: "Courier New", Courier, monospace;
   font-size: 4rem;
   color: white;
@@ -129,7 +129,7 @@ h2 {
   font-weight: 500;
 }
 
-h3 {
+h2 {
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
   font-size: 3rem;
@@ -157,7 +157,7 @@ h3 {
   max-width: 60rem;
   font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
-  gap: 2rem;
+  gap: 2rem;;
 }
 
 #description {
@@ -202,6 +202,7 @@ h3 {
   display: flex;
   gap: 5rem;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 
 #mock-up-image {
@@ -214,6 +215,7 @@ h3 {
   gap: 10rem;
   max-width: 100%;
   align-items: center;
+  justify-content: center;
 }
 
 #portfolio-left-image {
@@ -277,6 +279,7 @@ span {
 
   #portfolio-container {
     flex-direction: column;
+    max-width: 80%;
   }
 
   #portfolio-left-image {
@@ -297,7 +300,6 @@ span {
 
   #description {
     text-align: left;
-    padding: 3rem;
   }
 
   #about-me-right {
@@ -305,7 +307,7 @@ span {
   }
 
   #linked-in {
-    margin: 0rem 0rem 0rem 3rem;
+    margin: 3rem 3rem 3rem 0rem;
   }
 }
 /* padding:3rem */ /*needs to be changed to about me as it's effecting the rest of the page /*
