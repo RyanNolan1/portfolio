@@ -62,7 +62,7 @@ header {
 }
 
 #picture-and-name {
-  max-width: 60%;
+  max-width: 80rem;
   min-height: 50rem;
   display: flex;
   gap: 5rem;
@@ -117,7 +117,6 @@ header {
   min-height: 40rem;
   display: flex;
   gap: 5rem;
-  justify-content: left;
 }
 
 h1 {
@@ -217,20 +216,13 @@ h2 {
   max-width: 100%;
   align-items: center;
   justify-content: center;
-  position: relative;
-}
-
-#portfolio-title {
-  margin-top: 0;
-  top: 0;
-  left: 0;
 }
 
 #portfolio-left-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40rem;
+  max-width: 40rem;
 }
 
 #barbershop-app-image {
@@ -247,7 +239,7 @@ span {
   font-size: 2.4rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 360px) {
   #picture-and-name {
     max-width: 80%;
     min-height: 56rem;
@@ -308,6 +300,10 @@ span {
 
   #description {
     text-align: left;
+  }
+
+  #about-me-container {
+    margin-bottom: 5rem;
   }
 
   #about-me-right {
