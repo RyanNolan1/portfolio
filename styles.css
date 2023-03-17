@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
+  gap:2rem;
 }
 
 nav {
@@ -67,16 +68,18 @@ header {
   display: flex;
   gap: 5rem;
   align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem
 }
 
 #main-picture {
-  max-height: 40rem;
+  width:24vw;
 }
 
 #main-details {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 #name {
@@ -111,12 +114,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 #about-me-container {
   min-height: 40rem;
   display: flex;
   gap: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 h1 {
@@ -154,10 +160,10 @@ h2 {
 #about-me-right {
   display: flex;
   flex-direction: column;
-  max-width: 60rem;
   font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
   gap: 2rem;
+  max-width: 60rem;
 }
 
 #description {
@@ -204,6 +210,8 @@ h2 {
   gap: 5rem;
   justify-content: center;
   margin-bottom: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 #mock-up-image {
@@ -239,16 +247,15 @@ span {
   font-size: 2.4rem;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   #picture-and-name {
-    max-width: 80%;
-    min-height: 56rem;
-    gap: 1rem;
+    min-height: 40rem;
+    gap: 2rem;
     flex-direction: column;
   }
 
   #main-picture {
-    max-height: 24em;
+    width:60vw;
   }
 
   div {
@@ -266,7 +273,6 @@ span {
     display: flex;
     gap: 5rem;
     flex-direction: column;
-    max-width: 80%;
   }
 
   #bar-container {
@@ -279,10 +285,11 @@ span {
 
   #portfolio-container {
     flex-direction: column;
-    max-width: 80%;
+    gap: 2rem;
+    margin-bottom: 0rem;
   }
 
-  #portfolio-left-image {
+  #portfolio-left {
     align-items: center;
   }
 
@@ -291,7 +298,7 @@ span {
   }
 
   #mock-up-image {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   h3 {
@@ -302,8 +309,83 @@ span {
     text-align: left;
   }
 
+  #about-me-right {
+    gap: 0rem;
+  }
+
+  #linked-in {
+    margin: 3rem 3rem 3rem 0rem;
+  }
+
+  span {
+    color: grey;
+    font-size: 2rem;
+
+  }
+
+  
+}
+
+/* @media (max-width: 900px) {
+  #picture-and-name {
+    min-height: 26rem;
+    gap: 2rem;
+    max-width: 60rem;
+  }
+
+  #main-picture {
+    width:30vw;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+
   #about-me-container {
-    margin-bottom: 5rem;
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  #bar-container {
+    width: 100%;
+  }
+
+  #green-bar {
+    width: 100%;
+  }
+
+  #portfolio-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  #portfolio-left {
+    align-items: center;
+  }
+
+  #barbershop-app-image {
+    max-width: 60%;
+  }
+
+  #mock-up-image {
+    max-width: 70%;
+  }
+
+  h3 {
+    padding: 3rem;
+  }
+
+  #description {
+    text-align: left;
   }
 
   #about-me-right {
@@ -313,7 +395,16 @@ span {
   #linked-in {
     margin: 3rem 3rem 3rem 0rem;
   }
-}
+
+  span {
+    color: grey;
+    font-size: 2rem;
+
+  }
+
+} */
+
+
 /* padding:3rem */ /*needs to be changed to about me as it's effecting the rest of the page /*
   }
 
