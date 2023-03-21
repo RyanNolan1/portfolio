@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryan Nolan</title>
     <link rel="styleSheet" href="styles.css" />
-  </head>
-  <body>
-      <nav>
-          <li><a href="#contact-me" id="contact">Contact Me</a></li>
-          <li><a href="#portfolio-area">Portfolio</a></li>
-          <li>
-              <a href="https://www.linkedin.com/in/ryan-nolan-9405b5263/"
-              >LinkedIn</a
-              >
-            </li>
-            <li><a href="https://github.com/RyanNolan1">GitHub</a></li>
+</head>
+<body>
+      
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#contact-me" id="contact" class="nav-link">Contact Me</a></li>
+          <li class="nav-item"><a href="#portfolio-area" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/in/ryan-nolan-9405b5263/" class="nav-link">LinkedIn</a></li>
+          <li class="nav-item"><a href="https://github.com/RyanNolan1" class="nav-link">GitHub</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         </nav>
     <header>
         <section id="picture-and-name">
@@ -26,7 +30,7 @@
                 <p id="description">
                     Aspiring Junior Software Developer Aspiring Junior Software Developer Aspiring Junior Software Developer
                 </p>
-                <a href="#" id="download-cv">Download CV</a>
+                <a href="#" class="button">Download CV</a>
             </section>
         </section>
     </header>
@@ -66,7 +70,7 @@
           </p>
           <a
             href="https://www.linkedin.com/in/ryan-nolan-9405b5263/"
-            id="linked-in"
+            class="button"
             >LinkedIn Profile</a
           >
         </section>
@@ -102,7 +106,7 @@
             dolor sed vehicula. Morbi lectus orci, feugiat non condimentum a,
             mattis et eros. Curabitur porta posuere nunc eget lacinia.
           </p>
-          <a href="#" id="linked-in">Fuel Price App</a>
+          <a href="#" class="button">Fuel Price App</a>
         </section>
       </section>
     </section>
@@ -139,7 +143,7 @@
             dolor sed vehicula. Morbi lectus orci, feugiat non condimentum a,
             mattis et eros. Curabitur porta posuere nunc eget lacinia.
           </p>
-          <a href="#" id="linked-in">Barbershop</a>
+          <a href="#" class="button">Barbershop</a>
         </section>
       </section>
     </section>
@@ -176,9 +180,10 @@
             dolor sed vehicula. Morbi lectus orci, feugiat non condimentum a,
             mattis et eros. Curabitur porta posuere nunc eget lacinia.
           </p>
-          <a href="#" id="linked-in">NC Games</a>
+          <a href="#" class="button">NC Games</a>
         </section>
       </section>
     </section>
+    <script src="./scripts.js"></script>
   </body>
 </html>
