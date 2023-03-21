@@ -17,12 +17,20 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
-  gap:2rem;
+  gap: 2rem;
 }
 
-nav {
+.navbar {
   float: right;
-  padding: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  margin-bottom: -2rem;
+  color: rgb(255, 255, 255);
+  float: right;
+}
+
+.hamburger {
+  display: none;
 }
 
 li {
@@ -33,14 +41,25 @@ li {
   margin-left: 1rem;
 }
 
-a {
+.bar {
+  display: block;
+  width: 4rem;
+  height: 0.5rem;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(45, 230, 156);
+  border-radius: 10px;
+}
+
+.nav-link {
   display: block;
   padding: 1rem;
   color: white;
   text-decoration: none;
 }
 
-a:hover {
+.nav-link:hover {
   color: rgb(45, 230, 156);
 }
 
@@ -59,7 +78,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:3rem;
+  padding: 3rem;
 }
 
 #picture-and-name {
@@ -74,7 +93,7 @@ header {
 }
 
 #main-picture {
-  width:24vw;
+  width: 24vw;
 }
 
 #main-details {
@@ -98,16 +117,18 @@ header {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#download-cv {
+.button {
   font-size: 2rem;
   font-family: "Courier New", Courier, monospace;
   background-color: rgb(45, 230, 156);
   color: rgb(35, 39, 45);
   max-width: fit-content;
   margin-top: 1rem;
+  padding: 1rem;
+  text-decoration: none;
 }
 
-#download-cv:hover {
+.button:hover {
   background-color: white;
 }
 
@@ -116,7 +137,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 #about-me-container {
@@ -187,18 +207,6 @@ h2 {
   background-color: rgb(45, 230, 156);
 }
 
-#linked-in {
-  background-color: rgb(45, 230, 156);
-  color: rgb(35, 39, 45);
-  font-family: "Courier New", Courier, monospace;
-  max-width: fit-content;
-  font-size: 2rem;
-}
-
-#linked-in:hover {
-  background-color: white;
-}
-
 #portfolio-area {
   min-height: 40rem;
   display: flex;
@@ -250,27 +258,64 @@ span {
 }
 
 @media only screen and (min-width: 200px) and (max-width: 480px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    background: red;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    float: right;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
   #picture-and-name {
     gap: 2rem;
     flex-direction: column;
     width: 100rem;
     padding-left: 0rem;
-    padding-left: 0rem;
+    padding-right: 0rem;
   }
 
   #main-picture {
-    width:60vw;
+    width: 60vw;
   }
 
   #main-details {
     justify-content: left;
-    max-width:100%;
+    max-width: 100%;
   }
 
-  div {
+  #bar-container {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
   }
 
   li {
@@ -282,10 +327,6 @@ span {
     display: flex;
     gap: 5rem;
     flex-direction: column;
-  }
-
-  #bar-container {
-    width: 100%;
   }
 
   #green-bar {
@@ -329,7 +370,6 @@ span {
   span {
     color: grey;
     font-size: 2rem;
-
   }
 }
 
@@ -342,17 +382,16 @@ span {
   }
 
   #main-picture {
-    width:30vw;
+    width: 30vw;
   }
 
-  div {
+  #bar-container {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
   }
 
   li {
-    font-size: 1.2rem;
     margin-left: 0rem;
   }
 
@@ -360,10 +399,6 @@ span {
     display: flex;
     gap: 5rem;
     flex-direction: column;
-  }
-
-  #bar-container {
-    width: 100%;
   }
 
   #green-bar {
@@ -376,7 +411,6 @@ span {
     margin-bottom: 0rem;
     justify-content: center;
     align-items: center;
-   
   }
 
   #portfolio-left {
@@ -411,9 +445,7 @@ span {
   span {
     color: grey;
     font-size: 2rem;
-
   }
-  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -426,17 +458,16 @@ span {
   }
 
   #main-picture {
-    width:30vw;
+    width: 30vw;
   }
 
-  div {
+  #bar-container {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
   }
 
   li {
-    font-size: 1.2rem;
     margin-left: 0rem;
   }
 
@@ -460,7 +491,6 @@ span {
     margin-bottom: 0rem;
     justify-content: center;
     align-items: center;
-   
   }
 
   #portfolio-left {
@@ -495,9 +525,7 @@ span {
   span {
     color: grey;
     font-size: 2rem;
-
   }
-  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -510,17 +538,17 @@ span {
   }
 
   #main-picture {
-    width:30vw;
+    width: 30vw;
   }
 
-  div {
+  #bar-container {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
+    background-color: red;
   }
 
   li {
-    font-size: 1.2rem;
     margin-left: 0rem;
   }
 
@@ -528,10 +556,6 @@ span {
     display: flex;
     gap: 5rem;
     flex-direction: column;
-  }
-
-  #bar-container {
-    width: 100%;
   }
 
   #green-bar {
@@ -544,7 +568,6 @@ span {
     margin-bottom: 0rem;
     justify-content: center;
     align-items: center;
-   
   }
 
   #portfolio-left {
@@ -579,11 +602,8 @@ span {
   span {
     color: grey;
     font-size: 2rem;
-
   }
-  
 }
-
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   #picture-and-name {
@@ -595,17 +615,17 @@ span {
   }
 
   #main-picture {
-    width:20vw;
+    width: 20vw;
   }
 
-  div {
+  #bar-container {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
+    background-color: red;
   }
 
   li {
-    font-size: 1.2rem;
     margin-left: 0rem;
   }
 
@@ -613,10 +633,6 @@ span {
     display: flex;
     gap: 5rem;
     flex-direction: column;
-  }
-
-  #bar-container {
-    width: 100%;
   }
 
   #green-bar {
@@ -629,7 +645,6 @@ span {
     margin-bottom: 0rem;
     justify-content: center;
     align-items: center;
-   
   }
 
   #portfolio-left {
@@ -664,23 +679,19 @@ span {
   span {
     color: grey;
     font-size: 2rem;
-
   }
-  
 }
 
 @media only screen and (min-width: 1200px) {
   #main-picture {
-    width:20vw;
+    width: 20vw;
   }
-
 }
 
 @media only screen and (min-width: 1600px) {
   #main-picture {
-    width:14vw;
+    width: 14vw;
   }
-
 }
 
 /* padding:3rem */ /*needs to be changed to about me as it's effecting the rest of the page /*
