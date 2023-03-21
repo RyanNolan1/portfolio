@@ -59,6 +59,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding:3rem;
 }
 
 #picture-and-name {
@@ -248,15 +249,23 @@ span {
   font-size: 2.4rem;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 600px) {
+@media only screen and (min-width: 200px) and (max-width: 480px) {
   #picture-and-name {
     min-height: 40rem;
     gap: 2rem;
     flex-direction: column;
+    width: 100rem;
+    padding-left: 0rem;
+    padding-left: 0rem;
   }
 
   #main-picture {
     width:60vw;
+  }
+
+  #main-details {
+    justify-content: left;
+    max-width:100%;
   }
 
   div {
@@ -326,11 +335,14 @@ span {
 
   
 }
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   #picture-and-name {
     min-height: 40rem;
     gap: 3rem;
     flex-direction: row;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   #main-picture {
@@ -381,7 +393,7 @@ span {
   }
 
   #mock-up-image {
-    max-width: 70%;
+    max-width: 50%;
   }
 
   h3 {
@@ -408,6 +420,272 @@ span {
   
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #picture-and-name {
+    min-height: 40rem;
+    gap: 3rem;
+    flex-direction: row;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #main-picture {
+    width:30vw;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+
+  #about-me-container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  #bar-container {
+    width: 100%;
+  }
+
+  #green-bar {
+    width: 100%;
+  }
+
+  #portfolio-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0rem;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  #portfolio-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  #barbershop-app-image {
+    max-width: 60%;
+  }
+
+  #mock-up-image {
+    max-width: 50%;
+  }
+
+  h3 {
+    padding: 3rem;
+  }
+
+  #description {
+    text-align: left;
+  }
+
+  #about-me-right {
+    gap: 0rem;
+  }
+
+  #linked-in {
+    margin: 3rem 3rem 3rem 0rem;
+  }
+
+  span {
+    color: grey;
+    font-size: 2rem;
+
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #picture-and-name {
+    min-height: 40rem;
+    gap: 3rem;
+    flex-direction: row;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  #main-picture {
+    width:30vw;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+
+  #about-me-container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  #bar-container {
+    width: 100%;
+  }
+
+  #green-bar {
+    width: 100%;
+  }
+
+  #portfolio-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0rem;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  #portfolio-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  #barbershop-app-image {
+    max-width: 60%;
+  }
+
+  #mock-up-image {
+    max-width: 50%;
+  }
+
+  h3 {
+    padding: 3rem;
+  }
+
+  #description {
+    text-align: left;
+  }
+
+  #about-me-right {
+    gap: 0rem;
+  }
+
+  #linked-in {
+    margin: 3rem 3rem 3rem 0rem;
+  }
+
+  span {
+    color: grey;
+    font-size: 2rem;
+
+  }
+  
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #picture-and-name {
+    min-height: 40rem;
+    gap: 3rem;
+    flex-direction: row;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  #main-picture {
+    width:20vw;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+
+  #about-me-container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  #bar-container {
+    width: 100%;
+  }
+
+  #green-bar {
+    width: 100%;
+  }
+
+  #portfolio-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0rem;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  #portfolio-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  #barbershop-app-image {
+    max-width: 60%;
+  }
+
+  #mock-up-image {
+    max-width: 40%;
+  }
+
+  h3 {
+    padding: 3rem;
+  }
+
+  #description {
+    text-align: left;
+  }
+
+  #about-me-right {
+    gap: 0rem;
+  }
+
+  #linked-in {
+    margin: 3rem 3rem 3rem 0rem;
+  }
+
+  span {
+    color: grey;
+    font-size: 2rem;
+
+  }
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  #main-picture {
+    width:20vw;
+  }
+
+}
+
+@media only screen and (min-width: 1600px) {
+  #main-picture {
+    width:16vw;
+  }
+
+}
 
 /* padding:3rem */ /*needs to be changed to about me as it's effecting the rest of the page /*
   }
