@@ -1,18 +1,23 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: rgb(35, 39, 45);
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  gap:2rem;
 }
 
 nav {
@@ -50,29 +55,33 @@ a:hover {
 }
 
 header {
-  max-width: 192rem;
-  height: 50rem;
+  min-height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding:3rem;
 }
 
 #picture-and-name {
-  width: 80rem;
-  height: 45rem;
+  max-width: 80rem;
+  min-height: fit-content;
   display: flex;
-  gap: 6rem;
+  gap: 5rem;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  flex-direction: row;
 }
 
 #main-picture {
-  height: 40rem;
+  width:24vw;
 }
 
 #main-details {
-  justify-content: center;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+  max-width: 30rem;
 }
 
 #name {
@@ -80,6 +89,7 @@ header {
   color: white;
   font-size: 6rem;
   font-weight: 500;
+  line-height: 6rem;
 }
 
 #description {
@@ -102,22 +112,22 @@ header {
 }
 
 #about-me-area {
-  max-width: 192rem;
-  height: 40rem;
+  min-height: 40rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 #about-me-container {
-  max-width: 120rem;
-  height: 40rem;
+  min-height: 40rem;
   display: flex;
   gap: 5rem;
-  justify-content: left;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-h2 {
+h1 {
   font-family: "Courier New", Courier, monospace;
   font-size: 4rem;
   color: white;
@@ -126,10 +136,11 @@ h2 {
   font-weight: 500;
 }
 
-h3 {
+h2 {
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
   font-size: 3rem;
+  line-height: 4rem;
   font-weight: 500;
 }
 
@@ -137,24 +148,24 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 40rem;
+  max-width: 40rem;
 }
 
 #about-me-text-left {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
   color: grey;
-  text-align:left;
-  max-width: 40rem;;
+  text-align: left;
+  max-width: 40rem;
 }
 
 #about-me-right {
   display: flex;
   flex-direction: column;
-  max-width: 60rem;
   font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
   gap: 2rem;
+  max-width: 60rem;
 }
 
 #description {
@@ -167,6 +178,7 @@ h3 {
   height: 4rem;
   display: flex;
   align-items: center;
+  order: 4;
 }
 
 #green-bar {
@@ -188,19 +200,20 @@ h3 {
 }
 
 #portfolio-area {
-  max-width: 192rem;
-  height: 45rem;
+  min-height: 40rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #portfolio-container {
-  max-width: 120rem;
-  height: 45rem;
+  min-height: 40rem;
   display: flex;
   gap: 5rem;
   justify-content: center;
+  margin-bottom: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 #mock-up-image {
@@ -210,15 +223,16 @@ h3 {
 #portfolio-left {
   display: flex;
   flex-direction: column;
-  gap: 11rem;
-  width: 40rem;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 #portfolio-left-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40rem;
+  max-width: 40rem;
 }
 
 #barbershop-app-image {
@@ -232,5 +246,454 @@ h3 {
 
 span {
   color: grey;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
+
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+  #picture-and-name {
+    gap: 2rem;
+    flex-direction: column;
+    width: 100rem;
+    padding-left: 0rem;
+    padding-left: 0rem;
+  }
+
+  #main-picture {
+    width:60vw;
+  }
+
+  #main-details {
+    justify-content: left;
+    max-width:100%;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+
+  #about-me-container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  #bar-container {
+    width: 100%;
+  }
+
+  #green-bar {
+    width: 100%;
+  }
+
+  #portfolio-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  #portfolio-left {
+    align-items: center;
+  }
+
+  #barbershop-app-image {
+    max-width: 80%;
+  }
+
+  #mock-up-image {
+    max-width: 80%;
+  }
+
+  h3 {
+    padding: 3rem;
+  }
+
+  #description {
+    text-align: left;
+  }
+
+  #about-me-right {
+    gap: 0rem;
+  }
+
+  #linked-in {
+    margin: 3rem 3rem 3rem 0rem;
+  }
+
+  span {
+    color: grey;
+    font-size: 2rem;
+
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  #picture-and-name {
+    gap: 3rem;
+    flex-direction: row;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #main-picture {
+    width:30vw;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+
+  #about-me-container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  #bar-container {
+    width: 100%;
+  }
+
+  #green-bar {
+    width: 100%;
+  }
+
+  #portfolio-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0rem;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  #portfolio-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  #barbershop-app-image {
+    max-width: 60%;
+  }
+
+  #mock-up-image {
+    max-width: 70%;
+  }
+
+  h3 {
+    padding: 3rem;
+  }
+
+  #description {
+    text-align: left;
+  }
+
+  #about-me-right {
+    gap: 0rem;
+  }
+
+  #linked-in {
+    margin: 3rem 3rem 3rem 0rem;
+  }
+
+  span {
+    color: grey;
+    font-size: 2rem;
+
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #picture-and-name {
+    min-height: fit-content;
+    gap: 3rem;
+    flex-direction: row;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #main-picture {
+    width:30vw;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+
+  #about-me-container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  #bar-container {
+    width: 100%;
+  }
+
+  #green-bar {
+    width: 100%;
+  }
+
+  #portfolio-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0rem;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  #portfolio-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  #barbershop-app-image {
+    max-width: 60%;
+  }
+
+  #mock-up-image {
+    max-width: 50%;
+  }
+
+  h3 {
+    padding: 3rem;
+  }
+
+  #description {
+    text-align: left;
+  }
+
+  #about-me-right {
+    gap: 0rem;
+  }
+
+  #linked-in {
+    margin: 3rem 3rem 3rem 0rem;
+  }
+
+  span {
+    color: grey;
+    font-size: 2rem;
+
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #picture-and-name {
+    min-height: fit-content;
+    gap: 3rem;
+    flex-direction: row;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  #main-picture {
+    width:30vw;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+
+  #about-me-container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  #bar-container {
+    width: 100%;
+  }
+
+  #green-bar {
+    width: 100%;
+  }
+
+  #portfolio-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0rem;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  #portfolio-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  #barbershop-app-image {
+    max-width: 60%;
+  }
+
+  #mock-up-image {
+    max-width: 50%;
+  }
+
+  h3 {
+    padding: 3rem;
+  }
+
+  #description {
+    text-align: left;
+  }
+
+  #about-me-right {
+    gap: 0rem;
+  }
+
+  #linked-in {
+    margin: 3rem 3rem 3rem 0rem;
+  }
+
+  span {
+    color: grey;
+    font-size: 2rem;
+
+  }
+  
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #picture-and-name {
+    min-height: fit-content;
+    gap: 3rem;
+    flex-direction: row;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  #main-picture {
+    width:20vw;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+
+  #about-me-container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  #bar-container {
+    width: 100%;
+  }
+
+  #green-bar {
+    width: 100%;
+  }
+
+  #portfolio-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0rem;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  #portfolio-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  #barbershop-app-image {
+    max-width: 60%;
+  }
+
+  #mock-up-image {
+    max-width: 40%;
+  }
+
+  h3 {
+    padding: 3rem;
+  }
+
+  #description {
+    text-align: left;
+  }
+
+  #about-me-right {
+    gap: 0rem;
+  }
+
+  #linked-in {
+    margin: 3rem 3rem 3rem 0rem;
+  }
+
+  span {
+    color: grey;
+    font-size: 2rem;
+
+  }
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  #main-picture {
+    width:20vw;
+  }
+
+}
+
+@media only screen and (min-width: 1600px) {
+  #main-picture {
+    width:14vw;
+  }
+
+}
+
+/* padding:3rem */ /*needs to be changed to about me as it's effecting the rest of the page /*
+  }
+
+  header {
+    min-height: 60rem;
+  }
+  
+  body {
+    gap:4rem; // needs changing as it's effecting the nav bar
+  }
+
+  /* linked-in needs changing to button*/
+
+/*green bar needs moving to bottom of sections or to be removed completley*/
