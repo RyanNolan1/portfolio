@@ -260,7 +260,7 @@ span {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 9rem;
+    top: 0rem;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -269,7 +269,7 @@ span {
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     background-color: rgb(45, 230, 156);
     align-items: center;
-    height:46vh;
+    height:100vh;
     justify-content: center;
   }
 
@@ -298,12 +298,12 @@ span {
 
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(13px) rotate(45deg);
-    background-color: rgb(45, 230, 156);
+    background-color: rgb(35, 39, 45);
   }
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-13px) rotate(-45deg);
-    background-color: rgb(45, 230, 156);
+    background-color: rgb(35, 39, 45);
   }
 
   #picture-and-name {
@@ -385,6 +385,59 @@ span {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+  .navbar {
+    padding:2rem;
+  }
+          
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    background-color: rgb(45, 230, 156);
+    align-items: center;
+    height:100vh;
+    justify-content: center;
+  }
+
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    color:rgb(35, 39, 45);
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    float: right;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+    background-color: rgb(35, 39, 45);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+    background-color: rgb(35, 39, 45);
+  }
+
   #picture-and-name {
     gap: 3rem;
     flex-direction: row;
@@ -556,7 +609,6 @@ span {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: red;
   }
 
   li {
@@ -633,7 +685,6 @@ span {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: red;
   }
 
   li {
