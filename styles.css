@@ -409,6 +409,7 @@ input {
     width: 100rem;
     padding-left: 0rem;
     padding-right: 0rem;
+
   }
 
   #main-picture {
@@ -481,7 +482,7 @@ input {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 650px) {
   .navbar {
     padding: 2rem;
   }
@@ -546,7 +547,6 @@ input {
   #picture-and-name {
     gap: 2rem;
     flex-direction: column;
-    width: 100%;
     padding-left: 0rem;
     padding-right: 0rem;
   }
@@ -623,7 +623,7 @@ input {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 650px) and (max-width: 992px) {
   #picture-and-name {
     min-height: fit-content;
     gap: 3rem;
