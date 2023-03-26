@@ -266,6 +266,14 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+#contact-header {
+  color:black;
+  text-align: left;
+  width: 100%;
+  line-height: 6rem;
 }
 
 .form-styling {
@@ -289,8 +297,20 @@ textarea::placeholder {
   color: black;
 }
 
+textarea:focus {
+  outline: none;
+  border-width: 3px;
+  border-color: white;
+}
+
 input::placeholder {
   color: black;
+}
+
+input:focus {
+  outline: none;
+  border-width: 3px;
+  border-color: white;
 }
 
 #submit-button {
@@ -353,6 +373,15 @@ input {
 
   .nav-link {
     color: rgb(35, 39, 45);
+  }
+  
+  .nav-link:hover {
+    color: white;
+  }
+  
+  #contact:hover {
+    color: rgb(45, 230, 156);
+    background-color: rgb(35, 39, 45);;
   }
 
   .hamburger {
@@ -485,6 +514,15 @@ input {
   .nav-link {
     color: rgb(35, 39, 45);
   }
+  
+  .nav-link:hover {
+    color: white;
+  }
+  
+  #contact:hover {
+    color: rgb(45, 230, 156);
+    background-color: rgb(35, 39, 45);;
+  }
 
   .hamburger {
     display: block;
@@ -506,14 +544,20 @@ input {
   }
 
   #picture-and-name {
-    gap: 3rem;
-    flex-direction: row;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    gap: 2rem;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 
   #main-picture {
-    width: 30vw;
+    width: 40vw;
+  }
+
+  #main-details {
+    justify-content: left;
+    max-width:100%;
   }
 
   #bar-container {
@@ -822,18 +866,3 @@ input {
     width: 14vw;
   }
 }
-
-/* padding:3rem */ /*needs to be changed to about me as it's effecting the rest of the page /*
-  }
-
-  header {
-    min-height: 60rem;
-  }
-  
-  body {
-    gap:4rem; // needs changing as it's effecting the nav bar
-  }
-
-  /* linked-in needs changing to button*/
-
-/*green bar needs moving to bottom of sections or to be removed completley*/
