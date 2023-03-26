@@ -254,18 +254,78 @@ span {
 
 #contact-area {
   background-color: rgb(45, 230, 156);
-  min-height:38rem;
+  min-height: 50rem;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 3rem;
 }
 
+#contact-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-styling {
+  background-color: rgb(45, 230, 156);
+  border-width: 0.3rem;
+  border-color: black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: solid;
+  font-weight: 600;
+}
+
+#message-input {
+  height: 15rem;
+  width: 100%;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: black;
+}
+
+input::placeholder {
+  color: black;
+}
+
+#submit-button {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  color: rgb(45, 230, 156);
+  max-width: fit-content;
+  padding: 1rem;
+  text-decoration: none;
+  border-style: none;
+  margin-top: .8rem;
+}
+
+#submit-button:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+form {
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
 @media only screen and (min-width: 200px) and (max-width: 480px) {
   .navbar {
-    padding:2rem;
+    padding: 2rem;
   }
-          
+
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -278,10 +338,9 @@ span {
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     background-color: rgb(45, 230, 156);
     align-items: center;
-    height:100vh;
+    height: 100vh;
     justify-content: center;
   }
-
 
   .nav-menu.active {
     left: 0;
@@ -293,7 +352,7 @@ span {
   }
 
   .nav-link {
-    color:rgb(35, 39, 45);
+    color: rgb(35, 39, 45);
   }
 
   .hamburger {
@@ -395,9 +454,9 @@ span {
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .navbar {
-    padding:2rem;
+    padding: 2rem;
   }
-          
+
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -410,10 +469,9 @@ span {
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     background-color: rgb(45, 230, 156);
     align-items: center;
-    height:100vh;
+    height: 100vh;
     justify-content: center;
   }
-
 
   .nav-menu.active {
     left: 0;
@@ -425,7 +483,7 @@ span {
   }
 
   .nav-link {
-    color:rgb(35, 39, 45);
+    color: rgb(35, 39, 45);
   }
 
   .hamburger {

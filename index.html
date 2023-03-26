@@ -184,13 +184,15 @@
       </section>
     </section>
     <section id="contact-area">
+        <section id="contact-container">
     <form action="https://formsubmit.co/ryannolan1990@hotmail.com" method="POST">
-        <input type="text" name="name" placeholder="First Name" required>
-        <input type="text" name="name" placeholder="Second Name" required>
-        <input type="text" name="name" placeholder="Message" required>
-        <input type="email" name="email" placeholder="email" required>
-        <button type="submit">Send</button>
+        <input class="form-styling" type="text" name="First-Name" placeholder="First Name" required>
+        <input class="form-styling" type="text" name="Second-Name" placeholder="Second Name" required> <br>
+        <input class="form-styling" type="email" name="Email" placeholder="Email" required> <br>
+        <textarea id="message-input" class="form-styling" type="text" name="Message" placeholder="Message" required></textarea><br>
+        <button id="submit-button" type="submit">Submit</button>
    </form>
+        </section>
    <section>
     <script src="./scripts.js"></script>
   </body>
