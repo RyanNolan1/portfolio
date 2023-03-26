@@ -453,11 +453,11 @@ input {
   }
 
   #barbershop-app-image {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   #mock-up-image {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   h3 {
