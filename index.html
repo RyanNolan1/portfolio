@@ -95,6 +95,60 @@
     <section id="portfolio-area">
       <section id="portfolio-container">
         <section id="portfolio-left">
+          <img id="mock-up-image" src="./fuel-price-2.0.png" />
+        </section>
+        <section id="about-me-right">
+          <div id="bar-container">
+            <div id="green-bar"></div>
+          </div>
+          <h2>
+            Fuel Price Comparison App - 2.0 <br /><span
+              >HTML + CSS + Javascript + Node.js</span
+            >
+          </h2>
+          <p id="description">
+            This is a rework of the original fuel price comparison app I made. I
+            was happy with the original app at the time but I'd mainly focused
+            on the app's appearance and hadn't paid too much attention to the
+            efficiency / readability of code. I decided to build it again with
+            everything I had learnt, here are the key improvements I made:
+            <br />
+            <br />
+            - The API is only called once, on the previous app the API was
+            called every time a button was clicked. This worked but wasn't very
+            efficient so now the API is called and then the data is filtered
+            locally.
+            <br />
+            <br />
+            - To minimise the amount of repeated code, I reduced the JavaScript
+            from 275 lines to 103, and the CSS from 331 lines to 156.
+            <br />
+            <br />
+            - I used array methods instead of for loops to make the code more
+            readable and easier to understand.
+            <br />
+            <br />
+            - To improve security, I stored the API key in an .env file and
+            accessed it using Express and Cors middleware in a Node.js server. I
+            then made a fetch request to the server to retrieve the API key.
+            <br />
+            <br />
+            - I built the app mobile-first, which made it simpler to create a
+            responsive design that worked well on desktops as well as mobile
+            devices.
+          </p>
+          <a
+            href="https://github.com/RyanNolan1/fuel-price-checker-v2"
+            class="button"
+            >Fuel Price App 2.0</a
+          >
+        </section>
+      </section>
+    </section>
+
+    <section id="portfolio-area">
+      <section id="portfolio-container">
+        <section id="portfolio-left">
           <img id="mock-up-image" src="./fuel-price-image.png" />
         </section>
         <section id="about-me-right">
@@ -130,7 +184,11 @@
             - Spending hours and hours with CSS / Flexbox trying to get things
             to display properly on all devices.
           </p>
-          <a href="https://github.com/RyanNolan1/fuel-price-checker" class="button">Fuel Price App</a>
+          <a
+            href="https://github.com/RyanNolan1/fuel-price-checker"
+            class="button"
+            >Fuel Price App</a
+          >
         </section>
       </section>
     </section>
@@ -162,7 +220,11 @@
             work as a team as we had a stand up each morning, worked in pairs
             and kept in contact constantly to discuss the progress of the app
           </p>
-          <a href="https://github.com/RyanNolan1/FE-Booking-System" class="button">Barbershop</a>
+          <a
+            href="https://github.com/RyanNolan1/FE-Booking-System"
+            class="button"
+            >Barbershop</a
+          >
         </section>
       </section>
     </section>
@@ -182,10 +244,10 @@
             >
           </h2>
           <p id="description">
-            The first project I developed was a project
-            called NC Games, which is a board game review app. It allows users
-            to view, comment on, and upvote/downvote board game reviews. The
-            project consisted of two parts: front end and back end development.
+            The first project I developed was a project called NC Games, which
+            is a board game review app. It allows users to view, comment on, and
+            upvote/downvote board game reviews. The project consisted of two
+            parts: front end and back end development.
             <br />
             <br />
             For the back end, I created an API to access application data to be
